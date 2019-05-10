@@ -25,6 +25,9 @@ const lyticus = new Lyticus("your-property-id", {
   development: process.env.NODE_ENV === "development"
 });
 
+// Track the navigator
+lyticus.trackNavigator();
+
 // Start history mode to automatically track page views
 lyticus.startHistoryMode();
 
