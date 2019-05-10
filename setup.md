@@ -32,19 +32,9 @@ const lyticus = new Lyticus(propertyId, configuration);
 
 ### configuration properties
 
-#### historyMode (boolean)
-
-When set to true, Lyticus will override the pushState-function of the browser to automatically track page views in your SPA.
-
-```javascript
-const lyticus = new Lyticus("your-property-id", {
-  historyMode: true
-});
-```
-
 #### development (boolean)
 
-When set to true events will not be sent to the service but logged to the browser console instead.
+When set to true events will not be sent to the Lyticus servers.
 
 ```javascript
 const lyticus = new Lyticus("your-property-id", {
@@ -66,16 +56,12 @@ const lyticus = new Lyticus("your-property-id", {
 });
 ```
 
-##### Vue: computing route name from router
+## Adding event listeners
+
+Every time Lyticus tracks any thing, it also emits a `lyticus:track` event.
 
 ```javascript
-const lyticus = new Lyticus("your-property-id", {
-  getPath: () => {
-    const route = router.currentRoute;
-    if (!route || !route.name) {
-      return window.location.pathname;
-    }
-    return route.name;
-  }
+document.addEventListener("lyticus:track", function(e) {
+  console.log(e.detail);
 });
 ```

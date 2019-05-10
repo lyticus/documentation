@@ -26,7 +26,7 @@ module.exports = {
       "/",
       "installation",
       "setup",
-      "tracking-methods",
+      "methods",
       "vue-integration",
       "nuxt-integration",
       "vuepress-integration"

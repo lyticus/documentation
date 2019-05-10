@@ -1,9 +1,9 @@
 ---
-title: Tracking methods
+title: Methods
 lang: en-US
 ---
 
-# Tracking methods
+# Methods
 
 ## trackNavigator
 
@@ -43,4 +43,12 @@ Tracks an outbound click and redirects to the specified address.
 
 ```javascript
 lyticus.trackOutboundClick("red-button", "https://www.google.com");
+```
+
+## startHistoryMode
+
+Override the pushState method of the browser to automatically track page views in your SPA.
+
+```javascript
+lyticus.startHistoryMode();
 ```

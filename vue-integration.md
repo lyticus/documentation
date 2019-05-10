@@ -11,7 +11,8 @@ Lyticus has been tested with Vue version 2.6.10 and above.
 
 ## Example configuration
 
-*main.js*
+_main.js_
+
 ```javascript
 import Vue from "vue";
 import App from "@/App.vue";
@@ -21,27 +22,15 @@ import Lyticus from "lyticus";
 
 // Create Lyticus instance
 const lyticus = new Lyticus("your-property-id", {
-  development: process.env.NODE_ENV === "development",
-  getPath: () => {
-    const route = router.currentRoute;
-    if (!route || !route.name) {
-      return window.location.pathname;
-    }
-    return route.name;
-  }
+  development: process.env.NODE_ENV === "development"
 });
 
-// Track the navigator
-lyticus.trackNavigator();
-
-// Automatically track route changes
-router.afterEach(() => {
-  lyticus.trackPage();
-});
+// Start history mode to automatically track page views
+lyticus.startHistoryMode();
 
 /*
-(OPTIONAL)
-Adding $lyticus to the Vue prototype enables you to call Lyticus methods from within your components
+Add $lyticus to the Vue prototype
+This makes its methods easily accessible from within your components
 */
 Vue.prototype.$lyticus = lyticus;
 
@@ -72,13 +61,11 @@ router.afterEach(() => {
 });
 ```
 
-### Option 2: via history mode
+### Option 2: via startHistoryMode
 
 ```javascript
-const lyticus = new Lyticus("you-property-id", {
-  historyMode: true
-});
-lyticus.trackPage(); // You still need to track the initial page view yourself
+const lyticus = new Lyticus("you-property-id");
+lyticus.startHistoryMode();
 ```
 
 ### Using route name instead of path
@@ -86,7 +73,8 @@ lyticus.trackPage(); // You still need to track the initial page view yourself
 ```javascript
 const lyticus = new Lyticus("your-property-id", {
   getPath: () => {
-    const route = router.currentRoute;
+    const resolved = router.resolve(window.location.pathname);
+    const route = resolved.route;
     if (!route || !route.name) {
       return window.location.pathname;
     }
@@ -99,13 +87,15 @@ const lyticus = new Lyticus("your-property-id", {
 
 Adding `$lyticus` to the `Vue` prototype enables you to call Lyticus methods from within your components.
 
-*main.js*
+_main.js_
+
 ```javascript
 const lyticus = new Lyticus("you-property-id");
 Vue.prototype.$lyticus = lyticus;
 ```
 
-*MyComponent.vue*
+_MyComponent.vue_
+
 ```vue
 <template>
   <button @click="onRedButtonClick">Hello</button>
