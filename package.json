@@ -6,9 +6,9 @@
     "cloudfront": "aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths /*"
   },
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.47"
+    "vuepress": "^1.0.0-alpha.48"
   },
   "dependencies": {
-    "lyticus": "^1.0.7"
+    "lyticus": "^1.0.18"
   }
 }
