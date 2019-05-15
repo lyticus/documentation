@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build",
-    "deploy": "aws s3 sync .vuepress/dist s3://documentation.lyticus.com --delete --acl public-read",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read",
     "cloudfront": "aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths /*"
   },
   "devDependencies": {
