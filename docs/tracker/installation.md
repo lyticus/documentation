@@ -1,9 +1,9 @@
 ---
-title: Installation
+title: Tracker installation
 lang: en-US
 ---
 
-# Installation
+# Tracker installation
 
 ## NPM
 

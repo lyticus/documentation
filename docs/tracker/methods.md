@@ -1,9 +1,9 @@
 ---
-title: Methods
+title: Tracker methods
 lang: en-US
 ---
 
-# Methods
+# Tracker methods
 
 ## trackNavigator
 

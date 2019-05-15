@@ -23,13 +23,36 @@ module.exports = {
       { text: "Lyticus", link: "https://lyticus.com" }
     ],
     sidebar: [
-      "/",
-      "installation",
-      "setup",
-      "methods",
-      "vue-integration",
-      "nuxt-integration",
-      "vuepress-integration"
+      {
+        title: "Introduction",
+        collapsable: false,
+        children: [["/", "About"]]
+      },
+      {
+        title: "Tracker",
+        collapsable: false,
+        children: [
+          ["/tracker/", "Introduction"],
+          ["/tracker/installation", "Installation"],
+          ["/tracker/setup", "Setup"],
+          ["/tracker/methods", "Methods"],
+          {
+            title: "Integrations",
+            collapsable: false,
+            children: [
+              ["/tracker/integrations/", "Introduction"],
+              ["/tracker/integrations/vue", "Vue"],
+              ["/tracker/integrations/nuxt", "Nuxt"],
+              ["/tracker/integrations/vuepress", "VuePress"]
+            ]
+          }
+        ]
+      },
+      {
+        title: "Devtools",
+        collapsable: false,
+        children: [["/devtools/", "Introduction"]]
+      }
     ]
   }
 };

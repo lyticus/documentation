@@ -3,7 +3,7 @@ title: About
 lang: en-US
 ---
 
-<img src="https://cdn.byteboomers.com/img/logo/svg/lyticus.svg" style="max-width: 5rem">
+<img src="https://cdn.byteboomers.com/img/logo/svg/lyticus.svg" style="width: 5rem">
 
 # About
 

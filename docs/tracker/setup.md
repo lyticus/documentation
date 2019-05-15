@@ -1,9 +1,9 @@
 ---
-title: Setup
+title: Tracker setup
 lang: en-US
 ---
 
-# Setup
+# Tracker setup
 
 ## NPM
 
