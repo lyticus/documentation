@@ -5,6 +5,22 @@ lang: en-US
 
 # Integrations introduction
 
-<!-- TODO -->
+In this section you will find various recipes detailing how to integrate Lyticus with your favorite framework.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## Generic SPA integration
+
+::: warning
+In order for _startHistoryMode()_ to work, your router of choice must use the HTML5 history API and not a hash url.
+
+- Vue router: [history mode](https://router.vuejs.org/guide/essentials/history-mode.html)
+- React router: [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
+- Angular: [PathLocationStrategy](https://router.vuejs.org/guide/essentials/history-mode.html)
+  :::
+
+If your favorite SPA framework is not (yet) listed, you can use the following snippet to integrate Lyticus.
+
+```javascript
+const lyticus = new Lyticus("your-property-id");
+lyticus.trackNavigator();
+lyticus.startHistoryMode();
+```

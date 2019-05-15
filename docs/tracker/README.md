@@ -5,6 +5,12 @@ lang: en-US
 
 # Tracker introduction
 
-<!-- TODO -->
+The Lyticus tracker is a tiny javascript library that tracks various events (page view, click, etc...).
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+It is flexible and easily configurable: you control which events to track and when to track them.
+
+It is designed to work with both server-side (Express, Koa, Spring, Laravel) and client-side (Vue, React, Angular) rendered applications.
+
+The tracker for Lyticus is open-source.
+
+Your suggestions and pull requests are welcome via [github](https://github.com/byteboomers/lyticus-tracker).

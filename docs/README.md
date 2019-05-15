@@ -7,10 +7,10 @@ lang: en-US
 
 # About
 
-Simple, privacy-focused and affordable.
+Welcome to the documentation website for [Lyticus](https://www.lyticus.com?ref=documentation).
 
-Lyticus quickly reveals where your audience spends their time and what they interact with.
+Lyticus is an easy-to-install, near real-time, GDPR-friendly analytics solution.
 
-You don't need to dig through dozens of pages to find the information you need.
+This website is open-source.
 
-Lyticus helps you understand your audience's behavior.
+Your suggestions and pull requests are welcome via [github](https://github.com/byteboomers/lyticus-documentation).

@@ -7,13 +7,17 @@ lang: en-US
 
 ## NPM
 
+NPM is the recommended installation method. It pairs nicely with module bundlers such as Webpack.
+
 ```bash
-npm install --save lyticus
+npm install lyticus
 ```
 
 [npm package link](https://www.npmjs.com/package/lyticus)
 
 ## CDN
+
+If you don't have access to NPM, you can download the latest version via:
 
 ```html
 <script src="https://unpkg.com/lyticus"></script>

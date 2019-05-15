@@ -6,7 +6,7 @@ lang: en-US
 # Vue integration
 
 ::: tip
-Lyticus has been tested with Vue version 2.6.10 and above.
+Lyticus has been tested with Vue version 2.6.10.
 :::
 
 ## Example configuration

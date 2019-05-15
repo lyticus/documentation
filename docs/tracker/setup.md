@@ -5,14 +5,18 @@ lang: en-US
 
 # Tracker setup
 
-## NPM
+## Initialization
+
+To able to send events you need to create a `lyticus` instance first.
+
+### Bundler
 
 ```javascript
 import Lyticus from "lyticus";
 const lyticus = new Lyticus("your-property-id");
 ```
 
-## CDN
+### CDN
 
 ```html
 <script src="https://unpkg.com/lyticus"></script>
@@ -21,14 +25,13 @@ const lyticus = new Lyticus("your-property-id");
 </script>
 ```
 
-## Constructor
+## Configuration
+
+You can configure your `lyticus` instance by passing it a configuration object.
 
 ```javascript
-const lyticus = new Lyticus(propertyId, configuration);
+const lyticus = new Lyticus("your-property-id", configuration);
 ```
-
-- propertyId: string
-- configuration: object
 
 ### configuration properties
 

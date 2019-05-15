@@ -5,6 +5,10 @@ lang: en-US
 
 # Nuxt integration
 
+::: tip
+Lyticus has been tested with Nuxt version 2.6.3.
+:::
+
 Add the following lyticus.js file to your middleware directory:
 
 ```javascript
