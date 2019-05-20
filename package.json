@@ -10,6 +10,7 @@
     "tracking",
     "lyticus"
   ],
+  "private": true,
   "homepage": "https://github.com/byteboomers/lyticus-documentation#readme",
   "repository": {
     "type": "git",
