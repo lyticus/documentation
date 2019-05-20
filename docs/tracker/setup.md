@@ -13,7 +13,7 @@ To able to send events you need to create a `lyticus` instance first.
 
 ```javascript
 import Lyticus from "lyticus";
-const lyticus = new Lyticus("your-property-id");
+const lyticus = new Lyticus("your-website-id");
 ```
 
 ### CDN
@@ -21,7 +21,7 @@ const lyticus = new Lyticus("your-property-id");
 ```html
 <script src="https://unpkg.com/lyticus"></script>
 <script>
-  var lyticus = new Lyticus("your-property-id");
+  var lyticus = new Lyticus("your-website-id");
 </script>
 ```
 
@@ -30,7 +30,7 @@ const lyticus = new Lyticus("your-property-id");
 You can configure your `lyticus` instance by passing it a configuration object.
 
 ```javascript
-const lyticus = new Lyticus("your-property-id", configuration);
+const lyticus = new Lyticus("your-website-id", configuration);
 ```
 
 ### configuration properties
@@ -40,7 +40,7 @@ const lyticus = new Lyticus("your-property-id", configuration);
 When set to true events will not be sent to the Lyticus servers.
 
 ```javascript
-const lyticus = new Lyticus("your-property-id", {
+const lyticus = new Lyticus("your-website-id", {
   development: process.env.NODE_ENV === "dev"
 });
 ```
@@ -52,7 +52,7 @@ Enables you to override the way the path should be fetched.
 ##### Default implementation
 
 ```javascript
-const lyticus = new Lyticus("your-property-id", {
+const lyticus = new Lyticus("your-website-id", {
   getPath: () => {
     return window.location.pathname;
   }

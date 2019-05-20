@@ -21,7 +21,7 @@ import router from "@/router";
 import Lyticus from "lyticus";
 
 // Create Lyticus instance
-const lyticus = new Lyticus("your-property-id", {
+const lyticus = new Lyticus("your-website-id", {
   development: process.env.NODE_ENV === "development"
 });
 
@@ -48,7 +48,7 @@ new Vue({
 ## Development mode
 
 ```javascript
-const lyticus = new Lyticus("your-property-id", {
+const lyticus = new Lyticus("your-website-id", {
   development: process.env.NODE_ENV === "development"
 });
 ```
@@ -58,7 +58,7 @@ const lyticus = new Lyticus("your-property-id", {
 ### Option 1: via the router's global navigation guard
 
 ```javascript
-const lyticus = new Lyticus("you-property-id");
+const lyticus = new Lyticus("you-website-id");
 router.afterEach(() => {
   lyticus.trackPage();
 });
@@ -67,14 +67,14 @@ router.afterEach(() => {
 ### Option 2: via startHistoryMode
 
 ```javascript
-const lyticus = new Lyticus("you-property-id");
+const lyticus = new Lyticus("you-website-id");
 lyticus.startHistoryMode();
 ```
 
 ### Using route name instead of path
 
 ```javascript
-const lyticus = new Lyticus("your-property-id", {
+const lyticus = new Lyticus("your-website-id", {
   getPath: () => {
     const resolved = router.resolve(window.location.pathname);
     const route = resolved.route;
@@ -93,7 +93,7 @@ Adding `$lyticus` to the `Vue` prototype enables you to call Lyticus methods fro
 _main.js_
 
 ```javascript
-const lyticus = new Lyticus("you-property-id");
+const lyticus = new Lyticus("you-website-id");
 Vue.prototype.$lyticus = lyticus;
 ```
 

@@ -14,7 +14,7 @@ Add the following lyticus.js file to your middleware directory:
 ```javascript
 import Lyticus from "lyticus";
 
-const lyticus = new Lyticus("your-property-id", {
+const lyticus = new Lyticus("your-website-id", {
   development: process.env.NODE_ENV === "development"
 });
 

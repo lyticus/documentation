@@ -20,7 +20,7 @@ In order for _startHistoryMode()_ to work, your router of choice must use the HT
 If your favorite SPA framework is not (yet) listed, you can use the following snippet to integrate Lyticus.
 
 ```javascript
-const lyticus = new Lyticus("your-property-id");
+const lyticus = new Lyticus("your-website-id");
 lyticus.trackNavigator();
 lyticus.startHistoryMode();
 ```
