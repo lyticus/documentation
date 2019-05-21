@@ -7,7 +7,7 @@ lang: en-US
 
 # About
 
-Welcome to the documentation website for [Lyticus](https://www.lyticus.com?ref=documentation).
+Welcome to the documentation website for [Lyticus](https://lyticus.com?ref=documentation).
 
 Lyticus is an easy-to-install, near real-time, GDPR-friendly analytics solution.
 
