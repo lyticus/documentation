@@ -35,7 +35,21 @@ const lyticus = new Lyticus("your-website-id", configuration);
 
 ### configuration properties
 
+#### cookies (boolean)
+
+Default: true
+
+When set to false, Lyticus will not create, update or read any cookies.
+
+```javascript
+const lyticus = new Lyticus("your-website-id", {
+  cookies: false
+});
+```
+
 #### development (boolean)
+
+Default: false
 
 When set to true events will not be sent to the Lyticus servers.
 
