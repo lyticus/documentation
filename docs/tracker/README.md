@@ -5,7 +5,7 @@ lang: en-US
 
 # Tracker introduction
 
-The Lyticus tracker is a tiny javascript library that tracks various events (page view, click, etc...).
+The Lyticus tracker is a tiny JavaScript library that enables you to tracks various metrics such as [page views](/tracker/methods.md#tracking-page-views) and [clicks](/tracker/methods.md#tracking-clicks).
 
 It is flexible and easily configurable: you control which events to track and when to track them.
 

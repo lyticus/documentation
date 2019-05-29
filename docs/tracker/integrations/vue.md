@@ -5,18 +5,12 @@ lang: en-US
 
 # Vue integration
 
-::: tip
-Lyticus has been tested with Vue version 2.6.10.
-:::
-
 ## Example configuration
-
-_main.js_
 
 ```javascript
 import Vue from "vue";
-import App from "@/App.vue";
-import router from "@/router";
+import App from "./App.vue";
+import router from "./router";
 
 import Lyticus from "lyticus";
 
@@ -45,17 +39,9 @@ new Vue({
 }).$mount("#app");
 ```
 
-## Development mode
-
-```javascript
-const lyticus = new Lyticus("your-website-id", {
-  development: process.env.NODE_ENV === "development"
-});
-```
-
 ## Tracking page views
 
-### Option 1: via the router's global navigation guard
+### Via the router's global navigation guard
 
 ```javascript
 const lyticus = new Lyticus("you-website-id");
@@ -64,7 +50,7 @@ router.afterEach(() => {
 });
 ```
 
-### Option 2: via startHistoryMode
+### Via startHistoryMode
 
 ```javascript
 const lyticus = new Lyticus("you-website-id");

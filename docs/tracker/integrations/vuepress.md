@@ -5,10 +5,6 @@ lang: en-US
 
 # VuePress integration
 
-::: tip
-Lyticus has been tested with VuePress version 1.0.0-alpha.48.
-:::
-
 Add the following to your .vuepress/enhanceApp.js file:
 
 ```javascript

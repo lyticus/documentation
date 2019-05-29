@@ -10,7 +10,7 @@ In this section you will find various recipes detailing how to integrate Lyticus
 ## Generic SPA integration
 
 ::: warning
-In order for _startHistoryMode()_ to work, your router of choice must use the HTML5 history API and not a hash url.
+In order for _startHistoryMode()_ to work, your router of choice must use the HTML5 History API and not a hash URL.
 
 - Vue router: [history mode](https://router.vuejs.org/guide/essentials/history-mode.html)
 - React router: [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
