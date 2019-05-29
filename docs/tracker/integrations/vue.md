@@ -5,7 +5,14 @@ lang: en-US
 
 # Vue integration
 
+## Example projects (Github)
+
+- [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)
+- [lyticus-examples/vue/global-navigation-guard](https://github.com/byteboomers/lyticus-examples/tree/master/vue/global-navigation-guard)
+
 ## Example configuration
+
+_main.js_
 
 ```javascript
 import Vue from "vue";
@@ -16,7 +23,15 @@ import Lyticus from "lyticus";
 
 // Create Lyticus instance
 const lyticus = new Lyticus("your-website-id", {
-  development: process.env.NODE_ENV === "development"
+  development: process.env.NODE_ENV === "development",
+  // Optional: use route name instead of path
+  getPath: () => {
+    const route = router.currentRoute;
+    if (!route || !route.name) {
+      return window.location.pathname;
+    }
+    return route.name;
+  }
 });
 
 // Track the navigator
@@ -41,7 +56,16 @@ new Vue({
 
 ## Tracking page views
 
-### Via the router's global navigation guard
+### Modes
+
+#### History Mode
+
+```javascript
+const lyticus = new Lyticus("you-website-id");
+lyticus.startHistoryMode();
+```
+
+#### Global router navigation guard
 
 ```javascript
 const lyticus = new Lyticus("you-website-id");
@@ -50,20 +74,12 @@ router.afterEach(() => {
 });
 ```
 
-### Via startHistoryMode
-
-```javascript
-const lyticus = new Lyticus("you-website-id");
-lyticus.startHistoryMode();
-```
-
 ### Using route name instead of path
 
 ```javascript
 const lyticus = new Lyticus("your-website-id", {
   getPath: () => {
-    const resolved = router.resolve(window.location.pathname);
-    const route = resolved.route;
+    const route = router.currentRoute;
     if (!route || !route.name) {
       return window.location.pathname;
     }

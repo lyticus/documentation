@@ -24,3 +24,10 @@ const lyticus = new Lyticus("your-website-id");
 lyticus.trackNavigator();
 lyticus.startHistoryMode();
 ```
+
+## Example projects (Github)
+
+### Vue
+
+- [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)
+- [lyticus-examples/vue/global-navigation-guard](https://github.com/byteboomers/lyticus-examples/tree/master/vue/global-navigation-guard)

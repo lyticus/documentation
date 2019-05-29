@@ -10,5 +10,5 @@ lang: en-US
 
 The devtools extension for Lyticus is open-source.
 
-Your suggestions and pull requests are welcome via [github](https://github.com/byteboomers/lyticus-devtools).
+Your suggestions and pull requests are welcome via [Github](https://github.com/byteboomers/lyticus-devtools).
 

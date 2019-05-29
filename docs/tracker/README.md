@@ -13,4 +13,4 @@ It is designed to work with both server-side (Express, Koa, Spring, Laravel) and
 
 The tracker for Lyticus is open-source.
 
-Your suggestions and pull requests are welcome via [github](https://github.com/byteboomers/lyticus-tracker).
+Your suggestions and pull requests are welcome via [Github](https://github.com/byteboomers/lyticus-tracker).

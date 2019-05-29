@@ -17,4 +17,4 @@ Please let us know if you have questions, feedback or need any help: [hello@lyti
 
 This website is open-source.
 
-Your suggestions and pull requests are welcome via [github](https://github.com/byteboomers/lyticus-documentation).
+Your suggestions and pull requests are welcome via [Github](https://github.com/byteboomers/lyticus-documentation).
