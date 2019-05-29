@@ -55,6 +55,9 @@ module.exports = {
   ],
   themeConfig: {
     logo: 'https://cdn.byteboomers.com/img/logo/svg/lyticus.svg',
+    repo: 'byteboomers/lyticus-documentation',
+    docsDir: 'docs',
+    editLinks: true,
     nav: [
       { text: "Home", link: "/" },
       { text: "Lyticus", link: "https://lyticus.com" }
