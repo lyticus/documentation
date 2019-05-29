@@ -7,6 +7,26 @@ lang: en-US
 
 In this section you will find various recipes detailing how to integrate Lyticus with your favorite framework.
 
+## Example projects (Github)
+
+### React
+
+- [lyticus-examples/react/browser-router](https://github.com/byteboomers/lyticus-examples/tree/master/react/browser-router)
+
+### Vue
+
+- [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)
+- [lyticus-examples/vue/global-navigation-guard](https://github.com/byteboomers/lyticus-examples/tree/master/vue/global-navigation-guard)
+
+### Nuxt
+
+- [lyticus-examples/nuxt/spa-mode](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/spa-mode)
+- [lyticus-examples/nuxt/universal-mode](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/universal-mode)
+
+### VuePress
+
+- [lyticus-examples/vuepress/v1](https://github.com/byteboomers/lyticus-examples/tree/master/vuepress/v1)
+
 ## Generic SPA integration
 
 ::: warning
@@ -24,23 +44,3 @@ const lyticus = new Lyticus("your-website-id");
 lyticus.trackNavigator();
 lyticus.startHistoryMode();
 ```
-
-## Example projects (Github)
-
-### React
-
-- [lyticus-examples/react/browser-router](https://github.com/byteboomers/lyticus-examples/tree/master/react/browser-router)
-
-### Vue
-
-- [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)
-- [lyticus-examples/vue/global-navigation-guard](https://github.com/byteboomers/lyticus-examples/tree/master/vue/global-navigation-guard)
-
-### Nuxt
-
-- [lyticus-examples/nuxt/spa-mode/](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/spa-mode)
-- [lyticus-examples/nuxt/universal-mode/](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/universal-mode)
-
-### VuePress
-
-- [lyticus-examples/vuepress/v1/](https://github.com/byteboomers/lyticus-examples/tree/master/vuepress/v1)

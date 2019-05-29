@@ -7,7 +7,7 @@ lang: en-US
 
 ## Initialization
 
-Before you can start sending events, you need to create a `lyticus` instance (JavaScript object).
+Before you can start sending events, you need to create a `lyticus` instance.
 
 It is through this `lyticus` instance that you will initiate all tracking.
 
@@ -105,4 +105,4 @@ document.addEventListener("lyticus:track", function(e) {
 });
 ```
 
-Our [Devtools extensions](/devtools) uses these events keep a log of all sent events.
+Our [Devtools extensions](/devtools/index.md) uses these events keep a log of all sent events.

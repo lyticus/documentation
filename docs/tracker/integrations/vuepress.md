@@ -7,7 +7,7 @@ lang: en-US
 
 ## Example project (Github)
 
-- [lyticus-examples/vuepress/v1/](https://github.com/byteboomers/lyticus-examples/tree/master/vuepress/v1)
+- [lyticus-examples/vuepress/v1](https://github.com/byteboomers/lyticus-examples/tree/master/vuepress/v1)
 ## Configuration
 
 Add the following to your .vuepress/enhanceApp.js file:

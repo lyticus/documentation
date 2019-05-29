@@ -11,6 +11,8 @@ NPM is the recommended installation method. It pairs nicely with module bundlers
 
 ```bash
 npm install lyticus
+# OR
+yarn add lyticus
 ```
 
 [npm package link](https://www.npmjs.com/package/lyticus)
