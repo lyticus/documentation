@@ -35,3 +35,4 @@ lyticus.startHistoryMode();
 ### Nuxt
 
 - [lyticus-examples/nuxt/spa-mode/](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/spa-mode)
+- [lyticus-examples/nuxt/universal-mode/](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/universal-mode)

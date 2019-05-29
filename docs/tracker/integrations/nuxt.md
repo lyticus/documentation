@@ -8,57 +8,41 @@ lang: en-US
 ## Example projects (Github)
 
 - [lyticus-examples/nuxt/spa-mode/](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/spa-mode)
+- [lyticus-examples/nuxt/universal-mode/](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/universal-mode)
 
 ## Configuration
 
-1. Create a lyticus.js file in the root of your project containing the following:
-
-```javascript
-import Lyticus from "lyticus";
-
-const lyticus = new Lyticus("your-website-id", {
-  development: process.env.NODE_ENV === "development"
-});
-
-export default lyticus;
-```
-
-2. Create a lyticus.js file in your plugins directory containing the following:
+1. Create a lyticus.js file in your plugins directory containing the following:
 
 ```javascript
 import Vue from "vue";
 
-import lyticus from "~/lyticus";
+import Lyticus from "lyticus";
 
-// Track the navigator
-lyticus.trackNavigator();
+export default ({ app }) => {
+  // Create Lyticus instance
+  const lyticus = new Lyticus("your-website-id", {
+    development: process.env.NODE_ENV === "development"
+  });
 
-/*
-Add $lyticus to the Vue prototype
-This makes its methods easily accessible from within your components
-*/
-Vue.prototype.$lyticus = lyticus;
-```
+  // Add $lyticus to the Vue prototype (makes its methods easily accessible from within your components)
+  Vue.prototype.$lyticus = lyticus;
 
-3. Create a lyticus.js file in your middleware directory containing the following:
+  // Track the navigator
+  lyticus.trackNavigator();
 
-```javascript
-import lyticus from "~/lyticus";
-
-export default ({ route }) => {
-  lyticus.trackPage(route.path);
+  // Every time the route changes (fired on initialization too)
+  app.router.afterEach((to, from) => {
+    lyticus.trackPage(to.path);
+  });
 };
 ```
 
-4. Update your nuxt.config.js file:
+2. Update your nuxt.config.js file:
 
 ```javascript
 export default {
-  mode: "spa",
-  plugins: ["~/plugins/lyticus.js"],
-  router: {
-    middleware: ["lyticus"]
-  }
+  plugins: [{ src: "~/plugins/lyticus.js", mode: "client" }]
 };
 ```
 
