@@ -24,7 +24,7 @@ import Lyticus from "lyticus";
 export class LyticusService {
   lyticus;
 
-  constructor() {
+  init() {
     // Create Lyticus instance
     this.lyticus = new Lyticus("your-website-id");
     // Track the navigator
@@ -40,7 +40,31 @@ export class LyticusService {
 }
 ```
 
-2. Import the service into your components to track click events:
+2. Initialize the service in app.module.ts:
+
+```ts
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+
+import { LyticusService } from "./lyticus.service";
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+  constructor(private lyticus: LyticusService) {
+    lyticus.init();
+  }
+}
+```
+
+3. Import the service into your components to track click events:
 
 ```ts
 import { Component } from "@angular/core";
