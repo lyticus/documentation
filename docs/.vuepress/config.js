@@ -69,6 +69,15 @@ module.exports = {
         children: [["/", "About"]]
       },
       {
+        title: "Explainer",
+        collapsable: false,
+        children: [
+          ["/explainer/visits", "Visits"], 
+          ["/explainer/referrers", "Referrers"], 
+          ["/explainer/navigators", "Navigators"]
+        ],
+      },
+      {
         title: "Tracker",
         collapsable: false,
         children: [
