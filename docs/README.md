@@ -3,8 +3,6 @@ title: About
 lang: en-US
 ---
 
-<img src="https://cdn.byteboomers.com/img/logo/svg/lyticus.svg" style="width: 5rem">
-
 # About
 
 Welcome to the documentation website for [Lyticus](https://lyticus.com?ref=documentation).
