@@ -27,6 +27,10 @@ lyticus.startHistoryMode();
 
 ## Example projects (Github)
 
+### React
+
+- [lyticus-examples/react/browser-router](https://github.com/byteboomers/lyticus-examples/tree/master/react/browser-router)
+
 ### Vue
 
 - [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)

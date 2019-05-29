@@ -77,6 +77,7 @@ module.exports = {
             collapsable: false,
             children: [
               ["/tracker/integrations/", "Introduction"],
+              ["/tracker/integrations/react", "React"],
               ["/tracker/integrations/vue", "Vue"],
               ["/tracker/integrations/nuxt", "Nuxt"],
               ["/tracker/integrations/vuepress", "VuePress"]
