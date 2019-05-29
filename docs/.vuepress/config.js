@@ -54,9 +54,9 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    logo: 'https://cdn.byteboomers.com/img/logo/svg/lyticus.svg',
-    repo: 'byteboomers/lyticus-documentation',
-    docsDir: 'docs',
+    logo: "https://cdn.byteboomers.com/img/logo/svg/lyticus.svg",
+    repo: "byteboomers/lyticus-documentation",
+    docsDir: "docs",
     editLinks: true,
     nav: [
       { text: "Home", link: "/" },
@@ -72,10 +72,10 @@ module.exports = {
         title: "Explainer",
         collapsable: false,
         children: [
-          ["/explainer/visits", "Visits"], 
-          ["/explainer/referrers", "Referrers"], 
+          ["/explainer/visits", "Visits"],
+          ["/explainer/referrers", "Referrers"],
           ["/explainer/navigators", "Navigators"]
-        ],
+        ]
       },
       {
         title: "Tracker",
@@ -91,6 +91,7 @@ module.exports = {
             children: [
               ["/tracker/integrations/", "Introduction"],
               ["/tracker/integrations/react", "React"],
+              ["/tracker/integrations/angular", "Angular"],
               ["/tracker/integrations/vue", "Vue"],
               ["/tracker/integrations/nuxt", "Nuxt"],
               ["/tracker/integrations/vuepress", "VuePress"]

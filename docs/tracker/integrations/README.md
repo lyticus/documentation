@@ -13,6 +13,10 @@ In this section you will find various recipes detailing how to integrate Lyticus
 
 - [lyticus-examples/react/browser-router](https://github.com/byteboomers/lyticus-examples/tree/master/react/browser-router)
 
+### Angular
+
+- [lyticus-examples/angular/path-location-strategy](https://github.com/byteboomers/lyticus-examples/tree/master/angular/path-location-strategy)
+
 ### Vue
 
 - [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)
@@ -35,7 +39,7 @@ In order for _startHistoryMode()_ to work, your router of choice must use the HT
 - Vue router: [history mode](https://router.vuejs.org/guide/essentials/history-mode.html)
 - React router: [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
 - Angular: [PathLocationStrategy](https://angular.io/api/common/PathLocationStrategy)
-:::
+  :::
 
 If your favorite SPA framework is not (yet) listed, you can use the following snippet to integrate Lyticus.
 
