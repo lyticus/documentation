@@ -121,7 +121,7 @@ In order for _startHistoryMode()_ to work, your router of choice must use the HT
 
 - Vue router: [history mode](https://router.vuejs.org/guide/essentials/history-mode.html)
 - React router: [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
-- Angular: [PathLocationStrategy](https://router.vuejs.org/guide/essentials/history-mode.html)
+- Angular: [PathLocationStrategy](https://angular.io/api/common/PathLocationStrategy)
 :::
 
 
