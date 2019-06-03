@@ -5,7 +5,7 @@ lang: en-US
 
 # Visits
 
-> "What are my visitors viewing and interacting with?"
+_"What are my visitors viewing and interacting with?"_
 
 ## New visitors
 

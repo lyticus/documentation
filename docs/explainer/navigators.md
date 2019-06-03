@@ -5,7 +5,7 @@ lang: en-US
 
 # Navigators
 
-> "Who are my visitors"
+_"Who are my visitors?"_
 
 The following navigator data is tracked:
 

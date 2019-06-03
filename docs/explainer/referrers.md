@@ -5,15 +5,15 @@ lang: en-US
 
 # Referrers
 
-> "Where is my traffic coming from?"
+_"Where is my traffic coming from?"_
 
 ## Referrer
 
-Represents the web page (URL) that brought the visitor to your website.
+The web page (URL) that brought the visitor to your website.
 
 ## URL referrer
 
-Represents URL parameter that was included when the visitor was sent to your website.
+The URL parameter that was included when the visitor was sent to your website.
 
 Example:
 
