@@ -80,10 +80,25 @@ router.afterEach(() => {
 const lyticus = new Lyticus("your-website-id", {
   getPath: () => {
     const route = router.currentRoute;
-    if (!route || !route.name) {
-      return window.location.pathname;
+    if (route && route.name) {
+      return route.name;
     }
-    return route.name;
+    return window.location.pathname;
+  }
+});
+```
+
+OR
+
+```javascript
+const lyticus = new Lyticus("your-website-id", {
+  getPath: () => {
+    const path = window.location.pathname;
+    const { route } = router.resolve(path);
+    if (route && route.name) {
+      return route.name;
+    }
+    return path;
   }
 });
 ```
