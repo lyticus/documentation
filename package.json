@@ -2,7 +2,9 @@
   "name": "lyticus-documentation",
   "description": "Lyticus documentation",
   "private": true,
+  "version": "1.0.0",
   "author": "Bjorn Krols (https://byteboomers.com)",
+  "license": "UNLICENSED ",
   "keywords": [
     "analytics",
     "documentation",
@@ -17,12 +19,14 @@
   "bugs": {
     "url": "https://github.com/byteboomers/lyticus-documentation/issues"
   },
+  "main": "",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read",
     "cloudfront": "aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths /*"
   },
+  "husky": {},
   "dependencies": {
     "@sentry/browser": "^5.4.3",
     "@sentry/integrations": "^5.4.2",
@@ -30,5 +34,6 @@
   },
   "devDependencies": {
     "vuepress": "^1.0.2"
-  }
+  },
+  "peerDependencies": {}
 }
