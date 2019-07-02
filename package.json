@@ -1,16 +1,14 @@
 {
   "name": "lyticus-documentation",
-  "version": "1.0.0",
   "description": "Lyticus documentation",
+  "private": true,
   "author": "Bjorn Krols (https://byteboomers.com)",
-  "license": "MIT",
   "keywords": [
     "analytics",
     "documentation",
     "tracking",
     "lyticus"
   ],
-  "private": true,
   "homepage": "https://github.com/byteboomers/lyticus-documentation#readme",
   "repository": {
     "type": "git",
