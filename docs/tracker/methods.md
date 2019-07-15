@@ -39,13 +39,13 @@ lyticus.trackPage();
 
 ```javascript
 lyticus.trackPage(
-    path // optional string
+  path // optional string
 );
 ```
 
 ### Information sent
 
-- The path (result of `getPath()`, can be overridden via the optional `path` argument). 
+- The path (result of `getPath()`, can be overridden via the optional `path` argument).
 - The referrer, if applicable, extracted from the `Referer` header.
 - The URL referrer, if applicable, extracted from the following special query parameters: `referrer`, `ref`, `source`, `utm_source`.
 
@@ -63,8 +63,8 @@ lyticus.trackClick("green-button");
 
 ```javascript
 lyticus.trackClick(
-    value, // required string 
-    path // optional string
+  value, // required string
+  path // optional string
 );
 ```
 
@@ -87,9 +87,9 @@ lyticus.trackOutboundClick("google-button", "https://www.google.com");
 
 ```javascript
 lyticus.trackOutboundClick(
-    value, // required string
-    url, // required string
-    path // optional string
+  value, // required string
+  url, // required string
+  path // optional string
 );
 ```
 
@@ -99,6 +99,34 @@ lyticus.trackOutboundClick(
 - The path (result of `getPath()`, can be overridden via the optional `path` argument).
 
 The URL value is not implicitly tracked.
+
+## Tracking via data attributes
+
+Lyticus provides various event listeners that allow you to declaratively track events via data attributes.
+
+### Clicks
+
+**lyticus.clickTracker()** processes click events, if the target element of the event contains a _data-track-click_ attribute then it will automatically track the click event with the value of this attribute.
+
+#### Example
+
+```javascript
+window.addEventListener("click", lyticus.clickTracker());
+```
+
+```html
+<button data-track-click="buy">Buy</button>
+<button data-track-click="sell">Sell</button>
+<button data-track-click="discard">Discard</button>
+```
+
+Which is the equiavalent of:
+
+```html
+<button onclick="lyticus.trackClick('buy')">Buy</button>
+<button onclick="lyticus.trackClick('sell')">Sell</button>
+<button onclick="lyticus.trackClick('discard')">Discard</button>
+```
 
 ## History mode (SPA tracking)
 
@@ -114,7 +142,7 @@ lyticus.startHistoryMode();
 
 ### Arguments
 
-*None*
+_None_
 
 ::: warning
 In order for _startHistoryMode()_ to work, your router of choice must use the HTML5 History API and not a hash URL.
@@ -122,6 +150,4 @@ In order for _startHistoryMode()_ to work, your router of choice must use the HT
 - Vue router: [history mode](https://router.vuejs.org/guide/essentials/history-mode.html)
 - React router: [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
 - Angular: [PathLocationStrategy](https://angular.io/api/common/PathLocationStrategy)
-:::
-
-
+  :::
