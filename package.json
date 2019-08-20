@@ -4,12 +4,12 @@
   "private": true,
   "version": "1.0.0",
   "author": "Bjorn Krols (https://byteboomers.com)",
-  "license": "UNLICENSED ",
+  "license": "UNLICENSED",
   "keywords": [
     "analytics",
     "documentation",
-    "tracking",
-    "lyticus"
+    "lyticus",
+    "tracking"
   ],
   "homepage": "https://github.com/byteboomers/lyticus-documentation#readme",
   "repository": {
