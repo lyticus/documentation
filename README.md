@@ -7,7 +7,6 @@ Source of the Lyticus documentation website.
 ## Scripts
 
 ```bash
-
 # Build and start with hot-reload for development
 npm run dev
 
