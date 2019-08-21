@@ -120,7 +120,7 @@ window.addEventListener("click", lyticus.clickTracker());
 <button data-track-click="discard">Discard</button>
 ```
 
-Which is the equiavalent of:
+Which is the equivalent of:
 
 ```html
 <button onclick="lyticus.trackClick('buy')">Buy</button>
@@ -130,9 +130,13 @@ Which is the equiavalent of:
 
 ## History mode (SPA tracking)
 
-The `startHistoryMode` method overrides the pushState method of the browser to automatically track page views in your SPA.
+The `startHistoryMode` method enhances the pushState method of the browser to automatically track page views in your SPA.
+
+`startHistoryMode` returns a boolean indicating whether history mode was successfully started.
 
 [Learn more](/tracker/integrations/#generic-spa-integration).
+
+Use `stopHistoryMode` to stop automatically tracking page views.
 
 ### Example
 
