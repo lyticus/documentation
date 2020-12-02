@@ -5,9 +5,9 @@ lang: en-US
 
 # Angular integration
 
-## Example project (Github)
+## Example projecs (Github)
 
-- [lyticus-examples/angular/path-location-strategy](https://github.com/byteboomers/lyticus-examples/tree/master/angular/path-location-strategy)
+[lyticus-examples/angular](https://github.com/byteboomers/lyticus-examples/tree/master/angular)
 
 ## Configuration
 
@@ -19,7 +19,7 @@ import { Injectable } from "@angular/core";
 import Lyticus from "lyticus";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class LyticusService {
   lyticus;
@@ -55,7 +55,7 @@ import { LyticusService } from "./lyticus.service";
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(private lyticus: LyticusService) {
@@ -85,7 +85,7 @@ import { LyticusService } from "../../lyticus.service";
         Yellow button
       </button>
     </div>
-  `
+  `,
 })
 export class HomeViewComponent {
   constructor(private lyticus: LyticusService) {}

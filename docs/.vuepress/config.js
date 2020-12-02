@@ -6,52 +6,52 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "https://cdn.byteboomers.com/img/logo/ico/lyticus.ico"
-      }
+        href: "https://cdn.byteboomers.com/img/logo/ico/lyticus.ico",
+      },
     ],
     [
       "meta",
       {
         property: "og:title",
-        content: "Lyticus Documentation"
-      }
+        content: "Lyticus Documentation",
+      },
     ],
     [
       "meta",
       {
         property: "og:url",
-        content: "https://documentation.lyticus.com"
-      }
+        content: "https://documentation.lyticus.com",
+      },
     ],
     [
       "meta",
       {
         property: "og:image",
         content:
-          "https://cdn.byteboomers.com/img/logo/png/lyticus--1200x630.png"
-      }
+          "https://cdn.byteboomers.com/img/logo/png/lyticus--1200x630.png",
+      },
     ],
     [
       "meta",
       {
         property: "og:image:type",
-        content: "image/png"
-      }
+        content: "image/png",
+      },
     ],
     [
       "meta",
       {
         property: "og:image:width",
-        content: "1200"
-      }
+        content: "1200",
+      },
     ],
     [
       "meta",
       {
         property: "og:image:height",
-        content: "630"
-      }
-    ]
+        content: "630",
+      },
+    ],
   ],
   themeConfig: {
     logo: "https://cdn.byteboomers.com/img/logo/svg/lyticus.svg",
@@ -60,13 +60,13 @@ module.exports = {
     editLinks: true,
     nav: [
       { text: "Home", link: "/" },
-      { text: "Lyticus", link: "https://lyticus.com" }
+      { text: "Lyticus", link: "https://lyticus.com" },
     ],
     sidebar: [
       {
         title: "Introduction",
         collapsable: false,
-        children: [["/", "About"]]
+        children: [["/", "About"]],
       },
       {
         title: "Explainer",
@@ -74,8 +74,8 @@ module.exports = {
         children: [
           ["/explainer/visits", "Visits"],
           ["/explainer/referrers", "Referrers"],
-          ["/explainer/navigators", "Navigators"]
-        ]
+          ["/explainer/navigators", "Navigators"],
+        ],
       },
       {
         title: "Tracker",
@@ -94,16 +94,16 @@ module.exports = {
               ["/tracker/integrations/angular", "Angular"],
               ["/tracker/integrations/vue", "Vue"],
               ["/tracker/integrations/nuxt", "Nuxt"],
-              ["/tracker/integrations/vuepress", "VuePress"]
-            ]
-          }
-        ]
+              ["/tracker/integrations/vuepress", "VuePress"],
+            ],
+          },
+        ],
       },
       {
         title: "Devtools",
         collapsable: false,
-        children: [["/devtools/", "Introduction"]]
-      }
-    ]
-  }
+        children: [["/devtools/", "Introduction"]],
+      },
+    ],
+  },
 };

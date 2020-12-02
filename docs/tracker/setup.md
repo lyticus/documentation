@@ -43,7 +43,7 @@ Don't worry if the printed output does not expose all configuration properties, 
 You can customize your `lyticus` instance's default behavior by passing it a configuration object.
 
 ```javascript
-const lyticus = new Lyticus("your-website-id", your-configuration-object);
+const lyticus = new Lyticus("your-website-id", your - configuration - object);
 ```
 
 The default configuration object looks as follows:
@@ -54,7 +54,7 @@ const lyticus = new Lyticus("your-website-id", {
   development: false,
   getPath: () => {
     return window.location.pathname;
-  }
+  },
 });
 ```
 
@@ -80,7 +80,7 @@ If you set this property to `false`, Lyticus will be unable to correctly determi
 - Type: boolean
 - Default: `false`
 
- When set to true events will not be sent to the Lyticus servers (ideal for development and testing environments).
+When set to true events will not be sent to the Lyticus servers (ideal for development and testing environments).
 
 #### getPath (function)
 
@@ -100,7 +100,7 @@ Every time Lyticus tracks any thing, it also emits a `lyticus:track` event.
 You can register event listeners to build things such as loggers, history views, etc...
 
 ```javascript
-document.addEventListener("lyticus:track", function(e) {
+document.addEventListener("lyticus:track", function (e) {
   console.log(e.detail);
 });
 ```

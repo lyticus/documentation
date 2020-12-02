@@ -7,8 +7,7 @@ lang: en-US
 
 ## Example projects (Github)
 
-- [lyticus-examples/nuxt/spa-mode](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/spa-mode)
-- [lyticus-examples/nuxt/universal-mode](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt/universal-mode)
+[lyticus-examples/nuxt](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt)
 
 ## Configuration
 
@@ -22,7 +21,7 @@ import Lyticus from "lyticus";
 export default ({ app }) => {
   // Create Lyticus instance
   const lyticus = new Lyticus("your-website-id", {
-    development: process.env.NODE_ENV === "development"
+    development: process.env.NODE_ENV === "development",
   });
 
   // Add $lyticus to the Vue prototype (makes its methods easily accessible from within your components)
@@ -42,7 +41,7 @@ export default ({ app }) => {
 
 ```javascript
 export default {
-  plugins: [{ src: "~/plugins/lyticus.js", mode: "client" }]
+  plugins: [{ src: "~/plugins/lyticus.js", mode: "client" }],
 };
 ```
 

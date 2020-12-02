@@ -7,8 +7,7 @@ lang: en-US
 
 ## Example projects (Github)
 
-- [lyticus-examples/vue/history-mode](https://github.com/byteboomers/lyticus-examples/tree/master/vue/history-mode)
-- [lyticus-examples/vue/global-navigation-guard](https://github.com/byteboomers/lyticus-examples/tree/master/vue/global-navigation-guard)
+[lyticus-examples/vue](https://github.com/byteboomers/lyticus-examples/tree/master/vue)
 
 ## Example configuration
 
@@ -31,7 +30,7 @@ const lyticus = new Lyticus("your-website-id", {
       return window.location.pathname;
     }
     return route.name;
-  }
+  },
 });
 
 // Track the navigator
@@ -50,7 +49,7 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
 ```
 
@@ -84,7 +83,7 @@ const lyticus = new Lyticus("your-website-id", {
       return route.name;
     }
     return window.location.pathname;
-  }
+  },
 });
 ```
 
@@ -99,7 +98,7 @@ const lyticus = new Lyticus("your-website-id", {
       return route.name;
     }
     return path;
-  }
+  },
 });
 ```
 
@@ -126,8 +125,8 @@ export default {
   methods: {
     onRedButtonClick() {
       this.$lyticus.trackClick("red-button");
-    }
-  }
+    },
+  },
 };
 </script>
 ```

@@ -19,21 +19,20 @@
   "bugs": {
     "url": "https://github.com/byteboomers/lyticus-documentation/issues"
   },
-  "main": "",
   "scripts": {
-    "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read",
-    "cloudfront": "aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths /*"
+    "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read --profile lyticus && aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths \"/*\" --profile lyticus",
+    "dev": "vuepress dev docs",
+    "format": "prettier --write --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|css|scss|json|md|yml)\""
   },
   "husky": {},
   "dependencies": {
-    "@sentry/browser": "^5.6.3",
-    "@sentry/integrations": "^5.6.1",
-    "lyticus": "^1.0.33"
+    "@sentry/browser": "^5.28.0",
+    "@sentry/integrations": "^5.28.0",
+    "lyticus": "^1.0.39"
   },
   "devDependencies": {
-    "vuepress": "^1.0.3"
-  },
-  "peerDependencies": {}
+    "prettier": "^2.2.1",
+    "vuepress": "^1.7.1"
+  }
 }
