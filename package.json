@@ -25,7 +25,7 @@
   },
   "scripts": {
     "build": "vuepress build docs",
-    "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read --profile lyticus && aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths \"/*\" --profile lyticus",
+    "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read --profile lyticus-old && aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths \"/*\" --profile lyticus-old",
     "dev": "vuepress dev docs",
     "format": "prettier --write . --ignore-path .gitignore",
     "prepare": "husky install"
