@@ -5,9 +5,9 @@ lang: en-US
 
 # VuePress integration
 
-## Example projecs (Github)
+## Example projects (Github)
 
-[lyticus-examples/vuepress](https://github.com/byteboomers/lyticus-examples/tree/master/vuepresss)
+[lyticus-examples/vuepress](https://github.com/lyticus/examples/tree/master/vuepresss)
 
 ## Configuration
 

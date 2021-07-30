@@ -11,23 +11,23 @@ In this section you will find various recipes detailing how to integrate Lyticus
 
 ### React
 
-[lyticus-examples/react](https://github.com/byteboomers/lyticus-examples/tree/master/react)
+[lyticus-examples/react](https://github.com/lyticus/examples/tree/master/react)
 
 ### Angular
 
-[lyticus-examples/angular](https://github.com/byteboomers/lyticus-examples/tree/master/angular)
+[lyticus-examples/angular](https://github.com/lyticus/examples/tree/master/angular)
 
 ### Vue
 
-[lyticus-examples/vue](https://github.com/byteboomers/lyticus-examples/tree/master/vue)
+[lyticus-examples/vue](https://github.com/lyticus/examples/tree/master/vue)
 
 ### Nuxt
 
-[lyticus-examples/nuxt](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt)
+[lyticus-examples/nuxt](https://github.com/lyticus/examples/tree/master/nuxt)
 
 ### VuePress
 
-[lyticus-examples/vuepress](https://github.com/byteboomers/lyticus-examples/tree/master/vuepress)
+[lyticus-examples/vuepress](https://github.com/lyticus/examples/tree/master/vuepress)
 
 ## Generic SPA integration
 

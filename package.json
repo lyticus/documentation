@@ -3,7 +3,7 @@
   "description": "Lyticus documentation",
   "private": true,
   "version": "1.0.0",
-  "author": "Bjorn Krols (https://byteboomers.com)",
+  "author": "Bjorn Krols (https://lyticus.com)",
   "license": "UNLICENSED",
   "keywords": [
     "analytics",
@@ -11,28 +11,38 @@
     "lyticus",
     "tracking"
   ],
-  "homepage": "https://github.com/byteboomers/lyticus-documentation#readme",
+  "authors": {
+    "name": "Lyticus",
+    "email": "support@lyticus.com"
+  },
+  "homepage": "https://github.com/lyticus/documentation#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/byteboomers/lyticus-documentation.git"
+    "url": "git+https://github.com/lyticus/documentation.git"
   },
   "bugs": {
-    "url": "https://github.com/byteboomers/lyticus-documentation/issues"
+    "url": "https://github.com/lyticus/documentation/issues"
   },
   "scripts": {
     "build": "vuepress build docs",
     "deploy": "aws s3 sync docs/.vuepress/dist s3://documentation.lyticus.com --delete --acl public-read --profile lyticus && aws cloudfront create-invalidation --distribution-id E31DPLRGUBGD5C --paths \"/*\" --profile lyticus",
     "dev": "vuepress dev docs",
-    "format": "prettier --write --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|css|scss|json|md|yml)\""
+    "format": "prettier --write . --ignore-path .gitignore",
+    "prepare": "husky install"
   },
-  "husky": {},
   "dependencies": {
-    "@sentry/browser": "^5.28.0",
-    "@sentry/integrations": "^5.28.0",
-    "lyticus": "^1.0.39"
+    "@sentry/browser": "^6.10.0",
+    "@sentry/integrations": "^6.10.0",
+    "@sentry/tracing": "^6.10.0",
+    "lyticus": "^1.0.40",
+    "vuepress-plugin-robots": "^1.0.1",
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "devDependencies": {
-    "prettier": "^2.2.1",
-    "vuepress": "^1.7.1"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "husky": "^7.0.0",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "vuepress": "^1.8.2"
   }
 }

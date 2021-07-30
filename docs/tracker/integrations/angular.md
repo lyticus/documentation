@@ -5,9 +5,9 @@ lang: en-US
 
 # Angular integration
 
-## Example projecs (Github)
+## Example projects (Github)
 
-[lyticus-examples/angular](https://github.com/byteboomers/lyticus-examples/tree/master/angular)
+[lyticus-examples/angular](https://github.com/lyticus/examples/tree/master/angular)
 
 ## Configuration
 

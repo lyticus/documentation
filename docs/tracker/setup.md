@@ -104,5 +104,3 @@ document.addEventListener("lyticus:track", function (e) {
   console.log(e.detail);
 });
 ```
-
-Our [Devtools extensions](/devtools/index.md) uses these events keep a log of all sent events.

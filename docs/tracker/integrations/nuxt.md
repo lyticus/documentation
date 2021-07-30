@@ -7,7 +7,7 @@ lang: en-US
 
 ## Example projects (Github)
 
-[lyticus-examples/nuxt](https://github.com/byteboomers/lyticus-examples/tree/master/nuxt)
+[lyticus-examples/nuxt](https://github.com/lyticus/examples/tree/master/nuxt)
 
 ## Configuration
 

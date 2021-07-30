@@ -5,9 +5,9 @@ lang: en-US
 
 # React integration
 
-## Example projecs (Github)
+## Example projects (Github)
 
-[lyticus-examples/react](https://github.com/byteboomers/lyticus-examples/tree/master/react)
+[lyticus-examples/react](https://github.com/lyticus/examples/tree/master/react)
 
 ## Example configuration
 

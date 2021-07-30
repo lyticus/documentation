@@ -55,7 +55,7 @@ module.exports = {
   ],
   themeConfig: {
     logo: "https://cdn.byteboomers.com/img/logo/svg/lyticus.svg",
-    repo: "byteboomers/lyticus-documentation",
+    repo: "lyticus/documentation",
     docsDir: "docs",
     editLinks: true,
     nav: [
@@ -99,11 +99,29 @@ module.exports = {
           },
         ],
       },
-      {
-        title: "Devtools",
-        collapsable: false,
-        children: [["/devtools/", "Introduction"]],
-      },
     ],
   },
+  plugins: [
+    ["@vuepress/plugin-back-to-top"],
+    [
+      "sitemap",
+      {
+        hostname: "https://documentation.lyticus.com",
+        exclude: ["/404.html"],
+      },
+    ],
+    [
+      "robots",
+      {
+        host: "https://documentation.lyticus.com",
+        policies: [
+          {
+            userAgent: "*",
+            allow: ["/"],
+            disallow: ["/404.html"],
+          },
+        ],
+      },
+    ],
+  ],
 };

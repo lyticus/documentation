@@ -7,7 +7,7 @@ lang: en-US
 
 ## Example projects (Github)
 
-[lyticus-examples/vue](https://github.com/byteboomers/lyticus-examples/tree/master/vue)
+[lyticus-examples/vue](https://github.com/lyticus/examples/tree/master/vue)
 
 ## Example configuration
 
