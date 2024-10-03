@@ -31,7 +31,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@sentry/browser": "^6.16.1",
+    "@sentry/browser": "^8.33.0",
     "@sentry/integrations": "^6.16.1",
     "@sentry/tracing": "^6.16.1",
     "lyticus": "^1.0.45",
